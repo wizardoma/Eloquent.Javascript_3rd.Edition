@@ -4,8 +4,9 @@
  */
 
 const formChessBoard = (gridNumber) => {
-    let output = "";
+    let result ="";
     for (let i = 1; i<=gridNumber; i++){
+        let output = "";
         let jValue, jGridNumber;
         if (i%2===0){
             jValue = 1;
@@ -22,9 +23,12 @@ const formChessBoard = (gridNumber) => {
                 output += "#";
             }
         }
-        console.log(output);
-        output = ""
+        // console.log(output);
+        output += "\n"
+        result += output;
+
     }
+    return result;
 
 
 }
