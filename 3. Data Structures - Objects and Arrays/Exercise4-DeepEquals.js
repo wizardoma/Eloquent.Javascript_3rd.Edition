@@ -48,3 +48,6 @@ let c = {
 
 console.log(deepEquals(a, c))
 // true
+
+console.log(deepEquals(a,b))
+// false
